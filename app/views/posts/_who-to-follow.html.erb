@@ -1,57 +1,24 @@
 <div class="column">
 	<nav class="panel">
-		<p class="panel-heading">Who to Follow</p>
-	
-	<div class="panel-block">
-		<article class="media">
-			<div class="media-left">
-				<figure class="image is-32x32">
-					<img src="https://bulma.io/images/placeholders/64x64.png">
-				</figure>
-			</div>
-			<div class="media-content">
-				<div class="content">
-					<p>
-						<strong>Erika Nardini</strong>
-						<small>@e_nardini</small>
-					</p>
-				</div>
-			</div>
-		</article>
-	</div>
+		<p class="panel-heading has-background-info has-text-white has-text-centered">Who To Follow</p>
+	<% @users.each do | user | %>
 		<div class="panel-block">
-		<article class="media">
-			<div class="media-left">
-				<figure class="image is-32x32">
-					<img src="https://bulma.io/images/placeholders/64x64.png">
-				</figure>
-			</div>
-			<div class="media-content">
-				<div class="content">
-					<p>
-						<strong>John Dudley</strong>
-						<small>@nockon</small>
-					</p>
+			<article class="media">
+				<div class="media-left">
+					<figure class="image is-32x32">
+						<img src="<%= (url_for(user.image)) %>" >
+					</figure>
 				</div>
-			</div>
-		</article>
-	</div>
-		<div class="panel-block">
-		<article class="media">
-			<div class="media-left">
-				<figure class="image is-32x32">
-					<img src="https://bulma.io/images/placeholders/64x64.png">
-				</figure>
-			</div>
-			<div class="media-content">
-				<div class="content">
-					<p>
-						<strong>Allen Bolen</strong>
-						<small>@a_bolen</small>
-					</p>
+				<div class="media-content">
+					<div class="content">
+						<p>
+							<strong><%= user.name %></strong><br>
+							<small>@<%= user.username %></small>
+						</p>
+					</div>
 				</div>
-			</div>
-		</article>
-	</div>
+			</article>
+		</div>
+	<% end %>
 	</nav>
 </div>
