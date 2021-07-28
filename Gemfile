@@ -62,3 +62,4 @@ gem 'simple_form', '~> 5.1'
 gem 'devise', '~> 4.7', '>= 4.7.3' 
 gem "image_processing", "~> 1.0"
 gem 'spring'
+gem 'cloudinary'
