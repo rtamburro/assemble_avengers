@@ -1,0 +1,18 @@
+development:
+  cloud_name: rtamburro
+  api_key: '277314538279243'
+  api_secret: icIUWdfS47-Y_BM6ujISYLCIhZY
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: rtamburro
+  api_key: '277314538279243'
+  api_secret: icIUWdfS47-Y_BM6ujISYLCIhZY
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: rtamburro
+  api_key: '277314538279243'
+  api_secret: icIUWdfS47-Y_BM6ujISYLCIhZY
+  enhance_image_tag: true
+  static_file_support: false

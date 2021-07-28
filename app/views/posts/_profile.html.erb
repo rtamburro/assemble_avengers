@@ -5,9 +5,11 @@
 			<article class="media">
 				<div class="media-left">
 					<figure class="image is-64x64">
+						<%= if current_user.image.attached? %>
+
 						<%# <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
 						
-						<%= cl_image_tag(@user.image) %>
+						<%= cl_image_tag current_user.image.key %>
 					</figure>
 				</div>
 				<div class="media-content">
